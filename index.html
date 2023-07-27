@@ -71,7 +71,7 @@
     <main>
         <!--Exotic tastes-->
 
-        <section class=" my-24 rounded-l">
+        <section class=" my-24 rounded-l relative">
 
             <div class="carousel w-full   ">
                 <!--first banner-->
@@ -159,12 +159,41 @@
             </div>
         </section>
 
+        <!--BONUS PART-->
+        <section class="absolute -mt-60 ml-96 gap-10 bg-[#FFF] rounded-md px-20 py-16 shadow-sm">
+            <div>
+                <div class="carousel w-[1196px] bg-[#FFF] rounded-box justify-around   ">
+                    <div class="carousel-item flex flex-col">
+                        <img src="/images/fruit1.png" alt="Burger" />
+                        <h3 class="text-[#121212] font-normal text-2xl">Strawberry</h3>
+                    </div>
+                    <div class="carousel-item flex flex-col">
+                        <img src="/images/fruit2.png" alt="Burger" />
+                        <h3 class="text-[#121212] font-normal text-2xl">Orange</h3>
+                    </div>
+                    <div class="carousel-item flex flex-col">
+                        <img src="/images/fruit3.png" alt="Burger" />
+                        <h3 class="text-[#121212] font-normal text-2xl">Mango</h3>
+                    </div>
+                    <div class="carousel-item flex flex-col">
+                        <img src="/images/fruit4.png" alt="Burger" />
+                        <h3 class="text-[#121212] font-normal text-2xl">Strawberry</h3>
+                    </div>
+                    <div class="carousel-item flex flex-col">
+                        <img src="/images/fruit5.png" alt="Burger" />
+                        <h3 class="text-[#121212] font-normal text-2xl">Mango</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <!--Deal of the day-->
 
-        <section class="my-24 ">
-            <div class="flex flex-rows-1 lg:flex-cols-1 justify-between mb-10">
+        <section class="my-24  ">
+            <div class="flex flex-rows-1 lg:flex-cols-1 justify-between mb-10 ">
                 <div class="mb-8">
-                    <h1 class="text-[#121212] text-4xl font-bold pb-6">Deal of the day</h1>
+                    <h1 class="text-[#121212] text-4xl font-bold pb-6 mt-24">Deal of the day</h1>
                     <p class="text-[#12121299] text-xl font-semibold">Contrary to popular belief, is not simply random
                         text. It has
                         roots in a
@@ -172,7 +201,7 @@
                         Latin literature from 45 BC, making it over 2000 years old.</p>
 
                 </div>
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max mt-24">
                     <div class="flex flex-col">
                         <span class="countdown font-bold text-5xl text-[#121212] p-6 ">
                             <span style="--value:29;"></span> :
@@ -200,7 +229,7 @@
                 </div>
             </div>
             <div class="grid gap-5 grid-flow-col1 md:grid-cols-2 lg:grid-cols-4 mt-12">
-                <!--!ST CARD-->
+                <!--1ST CARD-->
                 <div class="card w-2/3  border-inherit border-2  pt-10 pb-10">
                     <figure class="px-10 pt-10">
                         <img src="/images/fruit6.png" alt="" class="rounded-xl" />
@@ -219,7 +248,49 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h5 class="text-[#F85559] font-semibold">Details</h5>
+                        <!--<h5 class="text-[#F85559] font-semibold">Details</h5>-->
+
+                        <div class="drawer">
+                            <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                            <div class="drawer-content">
+                                <!-- Page content here -->
+                                <label for="my-drawer"
+                                    class="btn btn-ghost text-[#F85559] font-semibold drawer-button">Details</label>
+                            </div>
+                            <div class="drawer-side">
+                                <label for="my-drawer" class="drawer-overlay"></label>
+                                <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
+                                    <!-- Sidebar content here -->
+                                    <div class="card w-2/3  border-inherit border-2  pt-10 pb-10">
+                                        <figure class="px-10 pt-10">
+                                            <img src="/images/fruit6.png" alt="" class="rounded-xl" />
+                                        </figure>
+
+                                        <div class="card-body text-center">
+                                            <h1 class="card-price text-center text-[#121212] font-bold text-2xl">12.90$
+                                                - 18.85$</h1>
+                                            <hr
+                                                class="w-48 h-[1px]  my-1 bg-gray-100 border-0 rounded md:my-5 bg-gray-100:bg-gray-100 ml-20">
+
+                                            <p class="text-[#12121299] text-xl pb-6 pt-12">Apples</p>
+                                            <div class=" justify-center pb-6  rating">
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" checked />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                            </div>
+                                            <button class="btn btn-outline btn-error">Close</button>
+                                            <button class="btn btn-error">Buy Now</button>
+
+                                </ul>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -242,7 +313,47 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h5 class="text-[#F85559] font-semibold">Details</h5>
+                        <div class="drawer">
+                            <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                            <div class="drawer-content">
+                                <!-- Page content here -->
+                                <label for="my-drawer"
+                                    class="btn btn-ghost text-[#F85559] font-semibold drawer-button">Details</label>
+                            </div>
+                            <div class="drawer-side">
+                                <label for="my-drawer" class="drawer-overlay"></label>
+                                <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
+                                    <!-- Sidebar content here -->
+                                    <div class="card w-2/3  border-inherit border-2  pt-10 pb-10">
+                                        <figure class="px-10 pt-10">
+                                            <img src="/images/fruit6.png" alt="" class="rounded-xl" />
+                                        </figure>
+
+                                        <div class="card-body text-center">
+                                            <h1 class="card-price text-center text-[#121212] font-bold text-2xl">12.90$
+                                                - 18.85$</h1>
+                                            <hr
+                                                class="w-48 h-[1px]  my-1 bg-gray-100 border-0 rounded md:my-5 bg-gray-100:bg-gray-100 ml-20">
+
+                                            <p class="text-[#12121299] text-xl pb-6 pt-12">Apples</p>
+                                            <div class=" justify-center pb-6  rating">
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" checked />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                            </div>
+                                            <button class="btn btn-outline btn-error">Close</button>
+                                            <button class="btn btn-error">Buy Now</button>
+
+                                </ul>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -265,8 +376,47 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h5 class="text-[#F85559] font-semibold">Details</h5>
+                        <div class="drawer">
+                            <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                            <div class="drawer-content">
+                                <!-- Page content here -->
+                                <label for="my-drawer"
+                                    class="btn btn-ghost text-[#F85559] font-semibold drawer-button">Details</label>
+                            </div>
+                            <div class="drawer-side">
+                                <label for="my-drawer" class="drawer-overlay"></label>
+                                <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
+                                    <!-- Sidebar content here -->
+                                    <div class="card w-2/3  border-inherit border-2  pt-10 pb-10">
+                                        <figure class="px-10 pt-10">
+                                            <img src="/images/fruit6.png" alt="" class="rounded-xl" />
+                                        </figure>
 
+                                        <div class="card-body text-center">
+                                            <h1 class="card-price text-center text-[#121212] font-bold text-2xl">12.90$
+                                                - 18.85$</h1>
+                                            <hr
+                                                class="w-48 h-[1px]  my-1 bg-gray-100 border-0 rounded md:my-5 bg-gray-100:bg-gray-100 ml-20">
+
+                                            <p class="text-[#12121299] text-xl pb-6 pt-12">Apples</p>
+                                            <div class=" justify-center pb-6  rating">
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" checked />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                            </div>
+                                            <button class="btn btn-outline btn-error">Close</button>
+                                            <button class="btn btn-error">Buy Now</button>
+
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -288,7 +438,47 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <h5 class="text-[#F85559] font-semibold">Details</h5>
+                        <div class="drawer">
+                            <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                            <div class="drawer-content">
+                                <!-- Page content here -->
+                                <label for="my-drawer"
+                                    class="btn btn-ghost text-[#F85559] font-semibold drawer-button">Details</label>
+                            </div>
+                            <div class="drawer-side">
+                                <label for="my-drawer" class="drawer-overlay"></label>
+                                <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
+                                    <!-- Sidebar content here -->
+                                    <div class="card w-2/3  border-inherit border-2  pt-10 pb-10">
+                                        <figure class="px-10 pt-10">
+                                            <img src="/images/fruit6.png" alt="" class="rounded-xl" />
+                                        </figure>
+
+                                        <div class="card-body text-center">
+                                            <h1 class="card-price text-center text-[#121212] font-bold text-2xl">12.90$
+                                                - 18.85$</h1>
+                                            <hr
+                                                class="w-48 h-[1px]  my-1 bg-gray-100 border-0 rounded md:my-5 bg-gray-100:bg-gray-100 ml-20">
+
+                                            <p class="text-[#12121299] text-xl pb-6 pt-12">Apples</p>
+                                            <div class=" justify-center pb-6  rating">
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" checked />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                                <input type="radio" name="rating-2"
+                                                    class="mask mask-star-2 bg-orange-400" />
+                                            </div>
+                                            <button class="btn btn-outline btn-error">Close</button>
+                                            <button class="btn btn-error">Buy Now</button>
+
+                                </ul>
+                            </div>
+                        </div>
 
                     </div>
 
